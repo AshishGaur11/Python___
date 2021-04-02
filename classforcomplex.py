@@ -1,6 +1,7 @@
 
 
 
+
 class complex:
 
     def __init__(self,x,i):
@@ -14,9 +15,9 @@ class complex:
     def put(self):
         print(self.x,'+',self.i,'i')
 
-    def __str__(self):
-        return self.x,self.i
-
+    def __mul__(self,other):
+      return complex(self.x * other.x, self.i * other.i)
+    
     def __add__(self,other):
       return complex(self.x + other.x, self.i + other.i)
   
@@ -24,7 +25,13 @@ if __name__ == "__main__":
     a = complex(0,0)
     b = complex(0,0)
     c = complex(0,0)
+    d = complex(0,0)
     complex.get(a)
     complex.get(b)
-    c = a + b
+    c = a * b
+    d = a + b
     complex.put(c)
+    complex.put(d)
+    
+    
+***********************************************************************************************************
