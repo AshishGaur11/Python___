@@ -77,7 +77,7 @@ class complex:
     def put(self):
         print(self.x,'+',self.i,'i')
 
-    def __add__(self,other):
+    def __add__(self,other):    #for long process!!
         v = self.x + other.x
         w = self.i + other.i
         return complex(v,w)
@@ -93,7 +93,8 @@ if __name__ == "__main__":
     d = complex(0,0)
     complex.get(a)
     complex.get(b)
-    c = complex.__add__(a,b)
+    c = complex.__add__(a,b) # both give you the value
+    c = a + b # both give you the value & one one value appere on screen !!!
     d = a * b
     complex.put(c)
     complex.put(d)
