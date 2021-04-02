@@ -15,8 +15,8 @@ class complex:
         print(self.x,'+',self.i,'i')
     
     def __str__(self):
-        return 'complex (%d, %d)' % (self.x, self.i)
-
+        return self.x,self.i
+    
     def __add__(self,other):
         return complex(self.x + other.x, self.i + other.i)
         
