@@ -70,7 +70,7 @@ if __name__=="__main__":
         print("3 for display")
         print("press q & Enter\n")
         n = input()
-        while n != '4'  :
+        while True  :
             
             if n == '1':
                 push()
@@ -84,7 +84,7 @@ if __name__=="__main__":
             else :
                 print("sorry does'nt work")
                 main()
-            break
-        
+            
+            
     main()
 
